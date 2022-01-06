@@ -5,6 +5,6 @@ def marketCap():
     sharesOutstanding=float(input("Shares outstanding: "))
     marketCap=(int(stockPrice)*int(sharesOutstanding))
 
-    print("The market cap of",stock,"is",marketCap)
+    print(f"The market cap of {stock} is {marketCap}")
 
 marketCap()

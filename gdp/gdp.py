@@ -1,12 +1,11 @@
 def calcGDP():
-    c = input("Private Consumption: ")
-    i = input("Gross Investment: ")
-    g = input("Government Investment: ")
-    x = input("Net Export: ")
-    m = input("Net Import: ")
+    c = int(input("Private Consumption: "))
+    i = int(input("Gross Investment: "))
+    g = int(input("Government Investment: "))
+    x = int(input("Net Export: "))
+    m = int(input("Net Import: "))
 
-    gdp = (int(c)+int(i)+int(g)+int(x)-int(m))
-
-    print("GDP:", int(gdp))
+    gdp = int(c+i+g+x-m)
+    print(f"GDP: ${gdp}")
 
 calcGDP()

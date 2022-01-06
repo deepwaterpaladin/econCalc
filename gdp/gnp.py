@@ -1,15 +1,15 @@
 def calcGNP():
-    c = input("Private Consumption: ")
-    i = input("Gross Investment: ")
-    g = input("Government Investment: ")
-    x = input("Net Export: ")
-    m = input("Net Import: ")
-    npi = input("Net Primary Income: ")
-    nsi = input("Net Secondary Income: ")
-    gdp = (int(c)+int(i)+int(g)+int(x)-int(m))
-
-    gnp = (gdp+int(npi)-int(nsi))
+    c = int(input("Private Consumption: "))
+    i = int(input("Gross Investment: "))
+    g = int(input("Government Investment: "))
+    x = int(input("Net Export: "))
+    m = int(input("Net Import: "))
+    npi = int(input("Net Primary Income: "))
+    nsi = int(input("Net Secondary Income: "))
     
-    print("GNP:", int(gnp))
+    gdp = int(c+i+g+x-m)
+    gnp = int(gdp+npi-nsi)
+    
+    print(f"GNP: {gnp}")
 
 calcGNP()

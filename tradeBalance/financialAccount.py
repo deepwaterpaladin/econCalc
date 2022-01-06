@@ -7,6 +7,6 @@ def financialAccount():
 
     financialAccountBalance=int(acquisitions-liabilities+derivatives)
 
-    print("Balance on Financial Account: ", financialAccountBalance)
+    print(f"Balance on Financial Account: {financialAccountBalance}")
 
 financialAccount()

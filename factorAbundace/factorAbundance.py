@@ -15,8 +15,8 @@ def factorAbundance(nationA, nationB):
 
     guessesTaken=0
 
-    print(nationA, "has", Ka, "machines and", La, "workers")
-    print(nationB, "has", Kb, "machines and", Lb, "workers")
+    
+    print(f"{nationA} has {Ka} machines and {La} workers", f"& {nationB} has {Kb} machines and {Lb} workers")
 
     capitalAbundantCan= nationAFactorAbundance>nationBFactorAbundance
     capitalAbundantUsa= nationBFactorAbundance>nationAFactorAbundance
